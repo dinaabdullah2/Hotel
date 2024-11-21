@@ -8,9 +8,8 @@ import CustomTabs from "../component/mucles/CustomTabs";
 import DetailsRoom from "../component/mucles/DetailsRoom";
 import LoacationSite from "../component/Search/LoacationSite";
 import BreadCrumbs from "../component/atoms/BreadCrumbs";
-import FancyBox from "../component/mucles/FancyBox";
-import Fancybox from "../component/mucles/FancyBox";
 import Link from "next/link";
+import Fancybox from "../component/mucles/FancyBox";
 
 const images = [
   {
@@ -202,21 +201,22 @@ export default function Page() {
               {isLoading ? (
                 <Skeleton height={310} radius="md" animate={false} />
               ) : (
-                <Fancybox>
-                  <Link
-                    data-fancybox="gallery"
-                    href="https://pix8.agoda.net/hotelImages/60410/-1/2e5457f6c6dd74c42e88ed55475c4b63.jpg?ca=29&ce=0&s=1024x768"
-                  >
-                    <Image
-                      className="w-full h-[312px] rounded"
-                      src="https://pix8.agoda.net/hotelImages/60410/-1/2e5457f6c6dd74c42e88ed55475c4b63.jpg?ca=29&ce=0&s=1024x768"
-                      alt=""
-                      width="100"
-                      height="250"
-                      // onClick={openImages}
-                    />
-                  </Link>
-                </Fancybox>
+                // <Fancybox>
+                //   <Link
+                //     data-fancybox="gallery"
+                //     href="https://pix8.agoda.net/hotelImages/60410/-1/2e5457f6c6dd74c42e88ed55475c4b63.jpg?ca=29&ce=0&s=1024x768"
+                //   >
+                //     <Image
+                //       className="w-full h-[312px] rounded"
+                //       src="https://pix8.agoda.net/hotelImages/60410/-1/2e5457f6c6dd74c42e88ed55475c4b63.jpg?ca=29&ce=0&s=1024x768"
+                //       alt=""
+                //       width="100"
+                //       height="250"
+                //       // onClick={openImages}
+                //     />
+                //   </Link>
+                // </Fancybox>
+                null
               )}
             </div>
             <div className="grid grid-cols-3 col-span-3 ">

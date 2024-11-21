@@ -1,8 +1,7 @@
 import loadable from "@loadable/component";
 import { Inter } from "next/font/google";
 import Loading from "./component/Home/loading";
-import FancyBox from "./component/mucles/FancyBox";
-import Fancybox from "./component/mucles/FancyBox";
+// import FancyBox from "./component/mucles/FancyBox";
 import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -37,8 +36,6 @@ const BlogMain = loadable(() => import("./component/Home/Blog"), {
 export default function Home() {
   return (
     <>
-
-
       <HeroSectionMain />
       <FeaturesSectionMain />
       <SecurityMain />

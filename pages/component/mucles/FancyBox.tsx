@@ -1,26 +1,27 @@
 import React, { useRef, useEffect } from "react";
+// import { Fancybox as NativeFancybox } from "@fancyapps/ui";
+// import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
-import { Fancybox as NativeFancybox } from "@fancyapps/ui";
-import "@fancyapps/ui/dist/fancybox/fancybox.css";
+function Fancybox() {
+  // const containerRef = useRef(null);
 
-function Fancybox({children}:any) {
-  const containerRef = useRef(null);
+  // useEffect(() => {
+  //   const container = containerRef.current;
 
-  useEffect(() => {
-    const container = containerRef.current;
+  //   // const delegate = props.delegate || "[data-fancybox]";
+  //   // const options = props.options || {};
 
-    // const delegate = props.delegate || "[data-fancybox]";
-    // const options = props.options || {};
+  //   NativeFancybox.bind(container);
 
-    NativeFancybox.bind(container);
+  //   return () => {
+  //     NativeFancybox.unbind(container);
+  //     NativeFancybox.close();
+  //   };
+  // });
 
-    return () => {
-      NativeFancybox.unbind(container);
-      NativeFancybox.close();
-    };
-  });
+  return <div >
 
-  return <div ref={containerRef}>{children}</div>;
+  </div>;
 }
 
 export default Fancybox;

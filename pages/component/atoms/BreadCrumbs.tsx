@@ -14,7 +14,6 @@ const items = [
 const BreadCrumbs = () => {
     return (
         <>
-        
           <Breadcrumbs separator={<IconChevronRight  className=' text-gray-800 h-[15px] w-[15px] ' />} mt="xs">{items}</Breadcrumbs>
         </>
       );
